@@ -85,7 +85,7 @@ function Contact() {
             <textarea
               name="message"
               cols={28}
-              rows={10}
+              rows={2}
               value={formData.message}
               onChange={handleChange}
               placeholder="Message"

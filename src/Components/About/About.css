@@ -10,9 +10,10 @@
 }
 
 .about-left-part{
-  width: 80%;
+  width: 100%;
   display: flex;
   gap: 10%;
+  padding: 5%;
 }
 
 .about-right-part{
@@ -35,7 +36,7 @@ p{
 .about {
   background-color: black;
   color: white;
-  padding: 40px;
+  padding: 60px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -94,8 +95,9 @@ p{
     justify-content: start;
     align-items: start;
     padding: 50px;
-    margin-top: -30%;
+    margin-top: -50%;
     background: #333;
+    height: auto;
   }
 
   .about-left-part {
