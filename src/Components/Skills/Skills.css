@@ -1,0 +1,92 @@
+.skills-container {
+  background-color: black;
+  padding: 20px;
+  color: white;
+  border-radius: 10px;
+  animation: fadeIn 1s ease-in-out, slideIn 1s ease-in-out; /* Add fade-in and slide-in animations */
+  text-align: center; /* Center the content horizontally */
+  width: 80%;
+  margin-inline: auto;
+}
+
+.skills-title {
+  font-size: 28px;
+  margin-bottom: 20px;
+}
+
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  justify-items: center;
+  align-items: center;
+}
+
+.skill-card {
+  text-align: center;
+  padding: 20px;
+  background-color: rgba(0, 0, 0, 0.7);
+  border-radius: 10px;
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  border: 2px solid transparent;
+  cursor: pointer;
+}
+
+.skill-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  border: 2px solid #fff;
+}
+
+.skill-card p {
+  margin-top: 10px;
+  font-size: 16px;
+  font-weight: bold;
+  color: white;
+}
+
+/* Keyframes for fade-in animation */
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+/* Keyframes for slide-in animation */
+@keyframes slideIn {
+  0% {
+    transform: translateY(-20px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+/* Media query for mobile devices */
+@media (max-width: 768px) {
+  .skills-container {
+    width: 80%;
+    padding: 30px;
+  }
+
+  .skills-title {
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+
+  .skills-grid {
+    gap: 15px;
+    grid-template-columns: repeat(2, 1fr); /* Single column for mobile */
+
+  }
+
+  .skill-card {
+    padding: 10px; /* Further reduced padding for mobile */
+  }
+
+  .skill-card p {
+    font-size: 12px; /* Smaller font size for mobile */
+  }
+}

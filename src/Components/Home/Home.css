@@ -1,0 +1,235 @@
+.section{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background: #1c1c1c;
+    color: #ffffff;
+    
+}
+
+.rightPart{
+    width: 30%;
+}
+
+img{
+    width: 90%;
+    border-radius: 50%;
+}
+
+h2{
+    font-size: 2rem;
+}
+
+.home-heading
+{
+    font-size: 5rem;
+}
+
+/* Home.css */
+
+.btn {
+  background-color: #333333;
+  color: white;
+  padding: 15px 35px;
+  border: none;
+  cursor: pointer;
+  margin-top: 5%;
+  margin-right: 5%;
+  transition: background-color 0.5s ease-in-out;
+  border-radius: 5px;
+  font-size: medium;
+}
+
+.btn-hover:hover {
+  background-color: #FFD700; /* Change to your desired hover color */
+  color: black;
+}
+
+
+/* Home.css */
+
+.fade-in-text {
+    opacity: 0;
+    animation: fadeIn 1s linear forwards;
+  }
+  
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  
+
+  /* Home.css */
+
+.profile-image {
+  transition: transform 0.3s linear;
+}
+
+.profile-image:hover {
+  transform: scale(1.05); /* You can adjust the scale factor for the desired hover effect */
+}
+
+
+/* Home.css */
+
+/* Other styles */
+
+.animated-name {
+  overflow: hidden;
+  border-right: 2px solid #333;
+  white-space: nowrap;
+  margin: 0;
+  letter-spacing: 2px;
+  animation: typing 2s steps(20, end), blink-caret 0.75s step-end infinite;
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+@keyframes blink-caret {
+  from, to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: #333;
+  }
+}
+
+
+
+
+.section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 40px;
+  background-color: #1c1c1c;
+  min-height: 100vh;
+}
+
+.leftPart {
+  width: 50%;
+  animation: fadeInLeft 1s ease-in-out; /* Fade in animation for the left part */
+  padding-left: 2%;
+}
+
+.home-heading {
+
+  font-size: 4rem;
+  font-weight: bold;
+  margin-top: 2rem;
+  transform: translateY(-20px); /* Apply a translateY transformation */
+  animation: slideInDown 1s ease-in-out; /* Slide in animation for the heading */
+}
+
+.fade-in-text {
+  opacity: 0;
+  animation: fadeIn 1s ease-in-out 0.5s forwards; /* Fade in animation for text */
+}
+
+.profile-image {
+  width: 100%;
+  max-width: 400px;
+  animation: zoomIn 1s ease-in-out; /* Zoom in animation for the image */
+}
+/* 
+
+/* Keyframes for animations */
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeInLeft {
+  from {
+    transform: translateX(-50px);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slideInDown {
+  from {
+    transform: translateY(-40px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes zoomIn {
+  from {
+    transform: scale(0);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+
+.heading-three
+{
+  font-size: 1.5rem;
+
+}
+
+
+@media (max-width: 415px) {
+  .section {
+    flex-direction: column;
+    padding: 20px;
+    margin-top: 50%;
+    justify-content: start;
+    height: auto;
+  }
+
+  .leftPart {
+    width: 100%;
+    text-align: center;
+    padding: 0;
+  }
+
+  .rightPart{
+    height: auto;
+    width: auto;
+    margin-top: 5%;
+  }
+
+  .home-heading {
+    margin: 0;
+    font-size: 2rem;
+    transform: translateY(0);
+  }
+
+  .profile-image {
+    
+    /* align-self: center; */
+    max-width: 100%;
+    width: 200px;
+  }
+
+  .fade-in-text {
+    animation-delay: 0.3s;
+  }
+
+  .greet-head{
+    margin: 0;
+  }
+}
