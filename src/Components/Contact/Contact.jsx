@@ -22,10 +22,10 @@ function Contact() {
 
     emailjs
       .sendForm(
-        "service_4768isq", // Replace with your Email.js service ID
-        "template_t3apccj", // Replace with your Email.js template ID
+        "service_4768isq", 
+        "template_t3apccj", 
         e.target,
-        "VakK1Wne5N_w94J6X" // Replace with your Email.js user ID
+        "VakK1Wne5N_w94J6X"
       )
       .then(
         (result) => {
